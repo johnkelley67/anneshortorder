@@ -1,6 +1,23 @@
+<script src="js/getdate.js"></script>
+
+<p>When the page loads the date is</p>
+<p id="onloaddate"></p>
+
 Hello! What kind of sandwich would you like?
 
 <form method="post" action="sandwich_choice">
 	<input type="text" name="sandwich">
 	<input type="submit">
 </form>
+
+<button type="button"
+onclick="getDateFunction('date')">
+Click me to display Date and Time.</button>
+<p> Date on button click is</p>
+<p id="date"></p>
+
+<script>
+
+	window.onload = getDateFunction("onloaddate");
+
+</script>
